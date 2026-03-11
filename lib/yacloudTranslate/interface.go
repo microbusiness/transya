@@ -48,14 +48,6 @@ type ListLanguagesResponse struct {
 
 type Format string
 
-const (
-	// Text without markup. Default value.
-	FormatPlainText Format = "PLAIN_TEXT"
-
-	// Text in the HTML format.
-	FormatHtml Format = "HTML"
-)
-
 type TranslateGlossaryConfig struct {
 	// Pass glossary data in the request. Currently, only this way to pass glossary is supported.
 	GlossaryData GlossaryData `json:"glossaryData"`
