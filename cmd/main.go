@@ -42,7 +42,7 @@ func main() {
 
 	defer nc.Drain()
 
-	producer, errProd := kafkaProduser.NewKafkaProducer(cfg.KafkaAddr, cfg.KafkaTopic)
+	producer, errProd := kafkaProduser.NewKafkaProducer(cfg.KafkaUrl, cfg.KafkaTopic)
 	if errProd != nil {
 		log.Fatal(errProd)
 	}

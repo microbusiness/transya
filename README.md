@@ -24,7 +24,7 @@ NATS (subject: notifications) --> transya --> Kafka (topic: myTopic)
 | `FOLDER_ID`   |      да      | —                | ID каталога в Yandex Cloud                            |
 | `API_KEY`     |      да      | —                | API-ключ для аутентификации в Yandex Cloud Translate  |
 | `NATS_URL`    |      да      | `localhost:4222` | Адрес NATS-сервера                                    |
-| `KAFKA_ADDR`  |      да      | `localhost:9093` | Адрес Kafka-брокера                                   |
+| `KAFKA_URL`   |      да      | `localhost:9093` | Адрес Kafka-брокера                                   |
 | `KAFKA_TOPIC` |      да      | `myTopic`        | Kafka-топик для публикации результатов                |
 
 Пример `.env` файла (`.env.example`):

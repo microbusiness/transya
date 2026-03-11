@@ -11,7 +11,7 @@ type Config struct {
 	FolderId   string `env:"FOLDER_ID,required"`
 	ApiKey     string `env:"API_KEY,required"`
 	NatsUrl    string `env:"NATS_URL,required"`
-	KafkaAddr  string `env:"KAFKA_ADDR,required"`
+	KafkaUrl   string `env:"KAFKA_URL,required"`
 	KafkaTopic string `env:"KAFKA_TOPIC,required"`
 }
 
