@@ -6,7 +6,7 @@ IMAGE_NAME = transya
 .PHONY: build run
 
 build:
-	docker build -t $(IMAGE_NAME) .
+	docker build --no-cache -t $(IMAGE_NAME) .
 
 run:
 	docker run --rm \

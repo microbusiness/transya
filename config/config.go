@@ -16,13 +16,11 @@ type Config struct {
 }
 
 func New() (*Config, error) {
-	err := godotenv.Load()
-	if err != nil {
-		log.Error().Msg("env variables NOT loaded from .env file")
-		return nil, err
+	if err := godotenv.Load(); err != nil {
+		log.Warn().Msg("env variables NOT loaded from .env file, using environment")
 	}
 	cfg := new(Config)
-	err = env.Parse(cfg)
+	err := env.Parse(cfg)
 	if err != nil {
 		return nil, err
 	}
